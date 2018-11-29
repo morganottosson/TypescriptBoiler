@@ -1,0 +1,33 @@
+{
+  "name": "webpack-demo1",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "webpack-dev-server --mode development"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/mocha": "^5.2.5",
+    "awesome-typescript-loader": "^5.2.1",
+    "css-loader": "^1.0.1",
+    "jest": "^23.6.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "ts-jest": "^23.10.5",
+    "ts-loader": "^5.3.1",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.1.6",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "@types/react": "^16.7.8",
+    "@types/react-dom": "^16.0.11",
+    "antd": "^3.10.9",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}
