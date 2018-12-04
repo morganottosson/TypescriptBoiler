@@ -26,22 +26,23 @@ interface IState {
 };
 
 class App extends React.Component<ReduxType, IState> {
-    public state: IState = {
+    state: IState = {
         inputText: ''
     }
 
-    public onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         this.setState({ inputText: e.target.value });
     }
 
-    public onAddClick = () => {
+    onAddClick = () => {
         this.props.setLoading(true);
         this.props.addItem(this.state.inputText);
         this.setState({inputText: ''});
         this.props.setLoading(false);
     }
 
-    public render() {
+    render() {
+        console.log('hejj')
         const { list, loading } = this.props;
         return (
             <div style={{margin: '20px'}}>
