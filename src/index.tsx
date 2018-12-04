@@ -1,11 +1,12 @@
 import * as React from 'react';
-import { render } from 'react-dom';
-import App from './components/App';
-import { sum } from './foo';
+import * as ReactDOM from 'react-dom';
+import App from './Components/App';
+import { Provider } from 'react-redux';
+import store from './store';
 
-render(
-    <App message="World" />,
-    document.getElementById('root'),
+ReactDOM.render(
+    <Provider store={store}>
+        <App/>
+    </Provider>,
+    document.getElementById('root') as HTMLElement
 );
-
-console.log(sum(1,2).toString());
